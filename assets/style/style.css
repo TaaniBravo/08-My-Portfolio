@@ -47,3 +47,7 @@ li {
 i {
     font-size: xx-large;
 }
+
+.hide {
+    display: none !important;
+}
