@@ -1,0 +1,49 @@
+/* All of my variables that I apply throughout the stylesheet for consistent code. */
+:root {
+    --darknavy: #1D116D;
+    --darkblue: #00429B;
+    --blue: #006CB8;
+    --midblue: #0093C3;
+    --turqoise: #00B9C4;
+    --lightblue: #41DDC1;
+    --transparent-black: rgba(0, 0, 0, 0.5);
+    --fjalla: font-family: 'Fjalla One';
+}
+
+body {
+    background: 
+    linear-gradient(#1D116D, #00429B, #006CB8, #0093C3, #00B9C4, #41DDC1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fjalla);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    color: white;
+    background-color: var(--transparent-black);
+    border-radius: ;
+}
+
+#dream {
+    color: var(--midblue);
+}
+
+#develop {
+    color: var(--turqoise);
+}
+
+#create {
+    color: var(--lightblue);
+}
+
+li {
+    list-style-type: none;
+}
+
+i {
+    font-size: xx-large;
+}
