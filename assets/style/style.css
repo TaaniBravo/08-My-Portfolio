@@ -7,7 +7,6 @@
     --turqoise: #00B9C4;
     --lightblue: #41DDC1;
     --transparent-black: rgba(0, 0, 0, 0.5);
-    --fjalla: font-family: 'Fjalla One';
 }
 
 body {
@@ -16,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: var(--fjalla);
+    font-family: 'Fjalla One', sans-serif;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -47,13 +46,17 @@ i {
     font-size: xx-large;
 }
 
+#img-container {
+    overflow: hidden;
+    display: fit-content;
+}
+
 #profile-pic {
     object-fit: cover;
     object-position: -110px;
-    border-radius: 5px;
-
 }
 
 .hide {
     display: none !important;
 }
+
