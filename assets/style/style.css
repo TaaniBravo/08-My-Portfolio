@@ -47,6 +47,13 @@ i {
     font-size: xx-large;
 }
 
+#profile-pic {
+    object-fit: cover;
+    object-position: -110px;
+    border-radius: 5px;
+
+}
+
 .hide {
     display: none !important;
 }
