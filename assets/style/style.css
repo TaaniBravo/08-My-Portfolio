@@ -26,6 +26,10 @@ header {
     background-color: var(--transparent-black);
 }
 
+#full-stack {
+    font-size: .9rem;
+}
+
 #dream {
     color: var(--midblue);
 }
@@ -37,6 +41,13 @@ header {
 #create {
     color: var(--lightblue);
 }
+
+#homeIcon,
+#aboutMeIcon,
+#projectsIcon,
+#resumeIcon  {
+        display: none;
+    }
 
 i {
     font-size: xx-large;
@@ -64,4 +75,23 @@ section {
     visibility: hidden;
     opacity: 0;
     max-height: 0% !important;
+}
+
+@media screen and (max-width: 768px) {
+    #homeBtn,
+    #aboutMeBtn,
+    #projectsBtn,
+    #resumeBtn  {
+        display: none;
+    }
+
+    #homeIcon,
+    #aboutMeIcon,
+    #projectsIcon,
+    #resumeIcon  {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-bottom: .75rem;
+    }
 }

@@ -16,35 +16,42 @@
 <body>
 
   <header class="row col-md-5 my-3 pt-3 pl-5 rounded">
-    <h1 class="col-12">
+    <h1 class="col-12 mb-0">
       Taani Maama
     </h1>
+    <p id='full-stack' class="col-12">FULL-STACK DEVELOPER.</p>
     <p class="lead col-12">{ <span id="dream">Dream</span>, <span id="develop">Develop</span>, <span
         id="create">Create</span> }</p>
   </header>
 
   <main class="row col-12">
-    <nav class="nav flex-column col-md-2 pl-2">
+    <nav class="nav flex-column  justify-content-center col-lg-2 pl-2">
       <button class="btn text-white" id="homeBtn" data-section="home">Home</button>
-      <button class="btn text-white" id="#aboutMeBtn" data-section='about-me'>About Me</button>
-      <button class="btn text-white" id="#projectsBtn" data-section='projects'>Portfolio</button>
+      <button class="btn text-white" id="aboutMeBtn" data-section='about-me'>About Me</button>
+      <button class="btn text-white" id="projectsBtn" data-section='projects'>Portfolio</button>
       <button class="btn text-white" id="resumeBtn">Resume</button>
+      <button class="btn" id="homeIcon" data-section="home"><i class="fas fa-home text-white"></i></button>
+      <button class="btn" id="aboutMeIcon" data-section='about-me'><i class="fas fa-address-card text-white"></i></button>
+      <button class="btn" id="projectsIcon" data-section='projects'><i class="fas fa-project-diagram text-white"></i></button>
+      <button class="btn" id="resumeIcon"><i class="far fa-file text-white"></i></button>
     </nav>
 
     <section id="home"
-      class="d-flex flex-column justify-content-center align-items-center text-center col-md-10 text-white" data-move-x='-200px'>
+      class="d-flex flex-column justify-content-center align-items-center text-center col-lg-10 text-white"
+      data-move-x='-200px'>
       <h3>Welcome to my page!</h3>
       <p>Take your time and reach out to me at any of my socials.</p>
       <div class="d-flex flex-row justify-content-around p-0">
         <a href="https://github.com/TaaniBravo" target="_blank"><i class="fab fa-github pr-3 text-white"></i></a>
         <a href="https://www.facebook.com/taanimaama" target="_blank"><i
             class="fab fa-facebook pr-3 text-white"></i></a>
-        <a href="" target="_blank"><i class="fab fa-linkedin pr-3 text-white"></i></a>
+        <a href="https://www.linkedin.com/in/taani-maama-b86583157/" target="_blank"><i
+            class="fab fa-linkedin pr-3 text-white"></i></a>
         <a href="mailto:taanim@uw.edu" target="_blank"><i class="fas fa-envelope-open-text text-white"></i></a>
       </div>
     </section>
 
-    <section id="about-me" class="hide col-md-10 d-flex flex-row flex-wrap">
+    <section id="about-me" class="hide col-lg-10 d-flex flex-row flex-wrap">
       <div id="img-container" class="col-lg-6 rounded">
         <img src="./assets/images/supremetee.jpg" alt="Taani" class="col-12 rounded-circle">
       </div>
@@ -64,7 +71,7 @@
       </div>
     </section>
 
-    <section id="projects" class="hide col-md-8">
+    <section id="projects" class="hide col-lg-8">
       <h3 class="text-white text-center">Click to learn more about my projects!</h3>
       <div id="carouselExampleCaptions" class="carousel slide m-3" data-ride="carousel">
         <ol class="carousel-indicators">
