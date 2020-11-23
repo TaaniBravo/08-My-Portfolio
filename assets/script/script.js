@@ -1,4 +1,6 @@
-$('#home').ready().removeClass('hide')
+const $homeEl = $('#home')
+const $aboutMeEl = $('#about-me')
+const $projectsEl = $('#projects')
 
 $('nav').on('click', '.btn', handleSections)
 
@@ -6,21 +8,23 @@ function handleSections(event) {
     // event.preventDefault();
 
     if ($(this).data('section') == 'home') {
-        $('#about-me').addClass('hide')
-        $('#projects').addClass('hide')
-        $('#home').removeClass('hide')
+        $aboutMeEl.addClass('trans')
+        $projectsEl.addClass('trans')
+        setTimeout(() => $aboutMeEl.addClass('hide'), 1000)
+        setTimeout(() => $projectsEl.addClass('hide'), 1000)
+        setTimeout(() => $homeEl.removeClass('hide'), 1250)
     }
 
     if ($(this).data('section') == 'about-me') {
-        $('#home').addClass('hide')
-        $('#projects').addClass('hide')
-        $('#about-me').removeClass('hide')
+        $homeEl.addClass('hide')
+        $projectsEl.addClass('hide')
+        $aboutMeEl.removeClass('hide trans')
     }
 
     if ($(this).data('section') == 'projects') {
-        $('#home').addClass('hide')
-        $('#about-me').addClass('hide')
-        $('#projects').removeClass('hide')
+        $homeEl.addClass('hide')
+        $aboutMeEl.addClass('hide')
+        $projectsEl.removeClass('hide trans')
     };
 
 }

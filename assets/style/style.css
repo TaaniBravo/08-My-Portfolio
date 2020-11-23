@@ -46,6 +46,10 @@ i {
     font-size: xx-large;
 }
 
+section {
+    transition: all 1s ease-in-out;
+}
+
 #img-container {
     overflow: hidden;
     display: fit-content;
@@ -60,3 +64,8 @@ i {
     display: none !important;
 }
 
+.trans {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0% !important;
+}
