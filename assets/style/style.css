@@ -38,10 +38,6 @@ header {
     color: var(--lightblue);
 }
 
-li {
-    list-style-type: none;
-}
-
 i {
     font-size: xx-large;
 }

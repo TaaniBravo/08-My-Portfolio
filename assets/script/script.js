@@ -10,21 +10,34 @@ function handleSections(event) {
     if ($(this).data('section') == 'home') {
         $aboutMeEl.addClass('trans')
         $projectsEl.addClass('trans')
-        setTimeout(() => $aboutMeEl.addClass('hide'), 1000)
-        setTimeout(() => $projectsEl.addClass('hide'), 1000)
-        setTimeout(() => $homeEl.removeClass('hide'), 1250)
+        setTimeout(() =>  {
+            $aboutMeEl.addClass('hide')
+            $projectsEl.addClass('hide')
+            $homeEl.removeClass('hide')
+        }, 1000)
+        setTimeout(() => $homeEl.removeClass('trans'), 1050)
     }
 
     if ($(this).data('section') == 'about-me') {
-        $homeEl.addClass('hide')
-        $projectsEl.addClass('hide')
-        $aboutMeEl.removeClass('hide trans')
+        $homeEl.addClass('trans')
+        $projectsEl.addClass('trans')
+        setTimeout(() =>  {
+            $homeEl.addClass('hide')
+            $projectsEl.addClass('hide')
+            $aboutMeEl.removeClass('hide')
+        }, 1000)
+        setTimeout(() => $aboutMeEl.removeClass('trans'), 1050)
     }
 
     if ($(this).data('section') == 'projects') {
-        $homeEl.addClass('hide')
-        $aboutMeEl.addClass('hide')
-        $projectsEl.removeClass('hide trans')
-    };
+        $homeEl.addClass('trans')
+        $aboutMeEl.addClass('trans')
+        setTimeout(() =>  {
+            $homeEl.addClass('hide')
+            $aboutMeEl.addClass('hide')
+            $projectsEl.removeClass('hide')
+        }, 1000)
+        setTimeout(() => $projectsEl.removeClass('trans'), 1050)
+    }
 
-}
+};
