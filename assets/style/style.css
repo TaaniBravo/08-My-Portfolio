@@ -55,6 +55,12 @@ i {
     font-size: xx-large;
 }
 
+#resumeBtn a, 
+#resumeIcon a {
+    text-decoration: none;
+    color: white;
+}
+
 section {
     transition: all 1s ease-in-out;
 }
