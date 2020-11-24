@@ -116,4 +116,8 @@ footer {
     #img-container {
         margin: 10px;
     }
+
+    #about-me-container {
+        margin-bottom: 45px;
+    }
 }

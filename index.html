@@ -28,14 +28,15 @@
     <nav class="nav flex-column col-lg-2 p-0">
       <button class="btn text-white" id="homeBtn" data-section="home">Home</button>
       <button class="btn text-white" id="aboutMeBtn" data-section='about-me'>About Me</button>
-      <button class="btn text-white" id="projectsBtn" data-section='projects'>Portfolio</button>
-      <button class="btn" id="resumeBtn"><a class='text-white'href="./assets/Resume.docx" download>Resume</a></button>
+      <button class="btn text-white" id="projectsBtn" data-section='projects'>Projects</button>
+      <button class="btn" id="resumeBtn"><a class='text-white' href="./assets/Resume.docx" download>Resume</a></button>
       <button class="btn" id="homeIcon" data-section="home"><i class="fas fa-home text-white"></i></button>
       <button class="btn" id="aboutMeIcon" data-section='about-me'><i
           class="fas fa-address-card text-white"></i></button>
       <button class="btn" id="projectsIcon" data-section='projects'><i
           class="fas fa-project-diagram text-white"></i></button>
-      <button class="btn" id="resumeIcon"><a href="./assets/Resume.docx"><i class="far fa-file text-white"></i></a></button>
+      <button class="btn" id="resumeIcon"><a href="./assets/Resume.docx"><i
+            class="far fa-file text-white"></i></a></button>
     </nav>
 
     <section id="home"
@@ -66,57 +67,45 @@
     </section>
 
     <section id="projects" class="hide col-lg-7">
-      <h3 class="text-white text-center">Click to learn more about my projects!</h3>
-      <div id="carouselExampleCaptions" class="carousel slide m-3" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-        </ol>
+      <h3 class="text-white text-center">Click to learn more!</h3>
+      <div id="carousel" class="carousel slide m-3" data-ride="carousel">
         <div class="carousel-inner">
           <a class="carousel-item active" href="https://github.com/TaaniBravo/Trail-Chaser-Hiking-App" target="_blank">
             <img src="./assets/images/2020.11.20-17.28.png" class="d-block w-100" alt="Trail Chasers App">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Trail Chasers Hike Finder App</h5>
-              <p>Find the perfect adventure for you with this custom search hike finder.</p>
+              <h5>Find the perfect hike for you with this app that custom tailors hikes on what you're looking for!</h5>
             </div>
           </a>
           <a class="carousel-item" href="https://github.com/TaaniBravo/06-Weather-Dashboard" target="_blank">
             <img src="./assets/images/2020.11.20-17.33.png" class="d-block w-100" alt="Weather Dashboard">
             <div class="carousel-caption d-none d-md-block text-body">
-              <h5>Weather Dashboard</h5>
-              <p>Look up the weather for any city with this fun and informative dashboard.</p>
+              <h5>Checkout the weather for today and more with this sweet dashboard.</h5>
             </div>
           </a>
           <a class="carousel-item" href="https://github.com/TaaniBravo/03-Password-Generator" target="_blank">
             <img src="./assets/images/2020.11.20-17.34.png" class="d-block w-100" alt="Password Generator">
             <div class="carousel-caption d-none d-md-block text-body">
-              <h5>Password Generator</h5>
-              <p>Create a unique password based on custom criteria of characters, numbers, and symbols.</p>
+              <h5>Keep your accounts secure with this custom selected password generator.</h5>
             </div>
           </a>
           <a class="carousel-item" href="https://github.com/TaaniBravo/04-Legend-of-Zelda-Quiz" target="_blank">
             <img src="./assets/images/2020.11.20-17.34_01.png" class="d-block w-100" alt="Legend of Zelda Quiz">
             <div class="carousel-caption d-none d-md-block text-body">
-              <h5>Legend of Zelda Quiz</h5>
-              <p>Calling of Legend of Zelda fans! Test your knowledge with this fun quiz.</p>
+              <h5>Test your Legend of Zelda knowledge with this fun quiz.</h5>
             </div>
           </a>
           <a class="carousel-item" href="https://github.com/TaaniBravo/05-Workday-Scheduler" target="_blank">
             <img src="./assets/images/2020.11.20-17.34_02.png" class="d-block w-100" alt="Workday Scheduler">
             <div class="carousel-caption d-none d-md-block text-body">
-              <h5>Workday Scheduler</h5>
-              <p>Plan your workday to optimize what you get done with this timekeeping workday scheduler.</p>
+              <h5>Plan your workday with this scheduler that saves your inputs!</h5>
             </div>
           </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -138,6 +127,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/script/script.js"></script>
 </body>
 
