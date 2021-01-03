@@ -32,9 +32,7 @@ Updated LinkedIn Profile
 ```
 
 ## My Journey
-```
 This assignment felt like second nature to me as I already had an idea of what I wanted the page to look like. So going into the project, I really just started hammering away at this. I only came across issues when implementing the CSS transitions while also making the sections disappear based on buttons pressed. It took me a few attempts at the code but ultimately it came out great and the code is very simple to where it could be applied elsewhere.
-```
 
 ## Resources
 ```
