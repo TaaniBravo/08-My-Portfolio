@@ -26,6 +26,10 @@ body {
 header {
     color: white;
     background-color: var(--transparent-black);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in;
+    width: 0%;
 }
 
 #full-stack {
@@ -84,6 +88,12 @@ section {
     opacity: 0;
     max-height: 0% !important;
     margin-top: 100px;
+}
+
+.header-trans {
+    visibility: visible;
+    opacity: 100;
+    width: auto;
 }
 
 footer {

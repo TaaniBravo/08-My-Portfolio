@@ -1,0 +1,28 @@
+{
+  "name": "08-My-Portfolio",
+  "version": "1.0.0",
+  "description": "Hello! I'm Taani Maama and this is my portfolio.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaaniBravo/08-My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaaniBravo/08-My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/TaaniBravo/08-My-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
