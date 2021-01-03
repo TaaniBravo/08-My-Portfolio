@@ -4,10 +4,10 @@ const $projectsEl = $('#projects')
 
 $('nav').on('click', '.btn', handleSections)
 
-$(document).ready(() => {
-    setTimeout(() => $('header').addClass('header-trans'), 1000)
+// $(document).ready(() => {
+//     setTimeout(() => $('header').addClass('header-trans'), 1000)
     
-})
+// })
 
 // Upon intial load of the page we want this open if statement to make the page be responsive to the size of the screen.
 if (window.innerWidth <= 768) {

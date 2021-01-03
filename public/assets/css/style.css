@@ -26,10 +26,10 @@ body {
 header {
     color: white;
     background-color: var(--transparent-black);
-    visibility: hidden;
+    /* visibility: hidden;
     opacity: 0;
     transition: all 1s ease-in;
-    width: 0%;
+    width: 0%; */
 }
 
 #full-stack {
@@ -90,11 +90,11 @@ section {
     margin-top: 100px;
 }
 
-.header-trans {
+/* .header-trans {
     visibility: visible;
     opacity: 100;
     width: auto;
-}
+} */
 
 footer {
     position: fixed;
