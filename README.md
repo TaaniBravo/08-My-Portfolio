@@ -12,7 +12,7 @@ Live URL: https://taanibravo.github.io/08-My-Portfolio/
     5. Resources
 
 ## ScreenShot
-![Alt Text](./assets/images/2020.11.24-21.32.png)
+![Alt Text](./public/assets/images/example.png)
 
 ## User Story
 
