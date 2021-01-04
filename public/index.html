@@ -25,7 +25,7 @@
         id="create">Create</span> }</p>
   </header>
 
-  <main class="row col-12 m-0 p-0">
+  <main class="row vw-100 m-0">
     <nav class="nav flex-column col-lg-2 p-0">
       <button class="btn text-white" id="homeBtn" data-section="home">Home</button>
       <button class="btn text-white" id="aboutMeBtn" data-section='about-me'>About Me</button>
@@ -40,14 +40,15 @@
             class="far fa-file text-white"></i></a></button>
     </nav>
 
-    <section id="home"
-      class="d-flex flex-column justify-content-center align-items-center text-center col-lg-10 text-white">
-      <img src="./assets/images/web-development.png" alt="Codemaster" id="codemaster-img" class="col-md-4">
-      <h3>Welcome to my page!</h3>
-      <p>Take your time and reach out to me at any of my socials down below!</p>
+    <section id="home" class="d-flex flex-column justify-content-center col-lg-10 text-white px-0">
+      <div class="col-md-8 text-center">
+        <img src="./assets/images/web-development.png" alt="Codemaster" id="codemaster-img" class="col-md-8">
+        <h3>Welcome to my page!</h3>
+        <p>Take your time and reach out to me at any of my socials down below!</p>
+      </div>
     </section>
 
-    <section id="about-me" class="hide trans col-lg-10 d-flex flex-row flex-wrap">
+    <section id="about-me" class="hide trans col-lg-10 d-flex flex-row flex-wrap px-0">
       <div id="img-container" class="col-lg-4 rounded">
         <img src="./assets/images/supremetee.jpg" alt="Taani" class="col-12 rounded-circle">
       </div>
@@ -69,7 +70,7 @@
       </div>
     </section>
 
-    <section id="projects" class="hide trans col-lg-7">
+    <section id="projects" class="hide trans col-lg-7 px-0">
       <h3 class="text-white text-center">Click to learn more!</h3>
       <div id="carousel" class="carousel slide m-3" data-ride="carousel">
         <div class="carousel-inner">
@@ -116,14 +117,15 @@
     </section>
   </main>
 
-  <footer class="p-1">
-    <div class="d-flex flex-row justify-content-center p-1">
+  <footer class="p-1 text-white row fixed-bottom p-0 m-0">
+    <div id='icons' class="p-1">
       <a href="https://github.com/TaaniBravo" target="_blank"><i class="fab fa-github pr-3 text-white"></i></a>
       <a href="https://www.facebook.com/taanimaama" target="_blank"><i class="fab fa-facebook pr-3 text-white"></i></a>
       <a href="https://www.linkedin.com/in/taani-maama-b86583157/" target="_blank"><i
           class="fab fa-linkedin pr-3 text-white"></i></a>
       <a href="mailto:taanim@uw.edu" target="_blank"><i class="fas fa-envelope-open-text text-white"></i></a>
     </div>
+    <div id="copyright" class="d-flex justify-content-center align-items-center">&copy; Taani Maama</div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

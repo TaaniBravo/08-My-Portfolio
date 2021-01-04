@@ -9,6 +9,12 @@
     --transparent-black: rgba(0, 0, 0, 0.5);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: 
     linear-gradient(#1D116D, #00429B, #006CB8, #0093C3, #00B9C4, #41DDC1);
@@ -16,21 +22,31 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Fjalla One', sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 header {
     color: white;
     background-color: var(--transparent-black);
-    /* visibility: hidden;
-    opacity: 0;
-    transition: all 1s ease-in;
-    width: 0%; */
+    width: 100vw;
 }
+
+section {
+    transition: all 1s ease-in-out;
+}
+
+footer {
+    background-color: var(--transparent-black);
+    padding: 0 2rem;
+}
+
+i {
+    font-size: xx-large;
+}
+
+footer i {
+    font-size: 1rem;
+   }
+  
 
 #full-stack {
     font-size: .9rem;
@@ -55,18 +71,10 @@ header {
         display: none;
     }
 
-i {
-    font-size: xx-large;
-}
-
 #resumeBtn a, 
 #resumeIcon a {
     text-decoration: none;
     color: white;
-}
-
-section {
-    transition: all 1s ease-in-out;
 }
 
 #img-container {
@@ -77,6 +85,10 @@ section {
 #profile-pic {
     object-fit: cover;
     object-position: -110px;
+}
+
+#copyright {
+    margin-left: auto;
 }
 
 .hide {
@@ -90,19 +102,6 @@ section {
     margin-top: 100px;
 }
 
-/* .header-trans {
-    visibility: visible;
-    opacity: 100;
-    width: auto;
-} */
-
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: var(--transparent-black);
-}
 
 @media screen and (max-width: 768px) {
     nav {
