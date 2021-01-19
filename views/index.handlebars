@@ -1,0 +1,91 @@
+<main class="row vw-100 m-0">
+    <nav class="nav flex-column col-lg-2 p-0">
+      <button class="btn text-white" id="homeBtn" data-section="home">Home</button>
+      <button class="btn text-white" id="aboutMeBtn" data-section='about-me'>About Me</button>
+      <button class="btn text-white" id="projectsBtn" data-section='projects'>Projects</button>
+      <button class="btn" id="resumeBtn"><a class='text-white' href="./assets/Resume.docx" download>Resume</a></button>
+      <button class="btn" id="homeIcon" data-section="home"><i class="fas fa-home text-white"></i></button>
+      <button class="btn" id="aboutMeIcon" data-section='about-me'><i
+          class="fas fa-address-card text-white"></i></button>
+      <button class="btn" id="projectsIcon" data-section='projects'><i
+          class="fas fa-project-diagram text-white"></i></button>
+      <button class="btn" id="resumeIcon"><a href="./assets/Resume.docx"><i
+            class="far fa-file text-white"></i></a></button>
+    </nav>
+
+    <section id="home" class="d-flex flex-column justify-content-center col-lg-10 text-white px-0">
+      <div class="col-md-8 text-center">
+        <img src="./assets/images/web-development.png" alt="Codemaster" id="codemaster-img" class="col-md-8">
+        <h3>Welcome to my page!</h3>
+        <p>Take your time and reach out to me at any of my socials down below!</p>
+      </div>
+    </section>
+
+    <section id="about-me" class="hide trans col-lg-10 d-flex flex-row flex-wrap px-0">
+      <div id="img-container" class="col-lg-4 rounded">
+        <img src="./assets/images/supremetee.jpg" alt="Taani" class="col-12 rounded-circle">
+      </div>
+      <div id="about-me-container" class="col-lg-6">
+        <p class="text-white">Hey guys! I'm a web developer, early in my career. While lacking in actual web-development
+          work
+          experience I continue to grow at an exponential rate, learning new techniques and values every day that will
+          help me in the pursuit to
+          being an amazing full-stack developer. My background in dropshipping project management, and leading teams in
+          high stress environments
+          in past careers has helped me build a solid foundation for my mindful yet competitive approach.</p>
+        <br>
+        <p class="text-white">Growth is a very important aspect of life for me and I always gives everything 110% no
+          matter how little the subject may matter.
+          Part of my mindset that has allowed me to make leaps and bounds in other fields are that I think limits are
+          meant to be pushed.
+          There are no ceilings when it comes to knowledge. I hope to continue building upon these mental strategies
+          to elevate me to my full potential.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="hide trans col-lg-7 px-0">
+      <h3 class="text-white text-center">Click to learn more!</h3>
+      <div id="carousel" class="carousel slide m-3" data-ride="carousel">
+        <div class="carousel-inner">
+          <a class="carousel-item active" href="https://github.com/TaaniBravo/Trail-Chaser-Hiking-App" target="_blank">
+            <img src="./assets/images/2020.11.20-17.28.png" class="d-block w-100" alt="Trail Chasers App">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Custom Hike App using HTML, Bulma CSS, JQuery and Hiking API.</h5>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://github.com/TaaniBravo/13-Eat-Da-Burger" target="_blank">
+            <img src="./assets/images/2020.11.20-17.33.png" class="d-block w-100" alt="Weather Dashboard">
+            <div class="carousel-caption d-none d-md-block text-body">
+              <h5>Custom built ORM application with MYSQL database, styled with SCSS.</h5>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://github.com/TaaniBravo/One-World-Academy" target="_blank">
+            <img src="./assets/images/2020.11.20-17.34.png" class="d-block w-100" alt="Password Generator">
+            <div class="carousel-caption d-none d-md-block text-body">
+              <h5>Custom LMS with user courses and quizzes. Made with Sequelize, Passport, and Bootstrap.</h5>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://github.com/TaaniBravo/StockSmart" target="_blank">
+            <img src="./assets/images/2020.11.20-17.34_01.png" class="d-block w-100" alt="Legend of Zelda Quiz">
+            <div class="carousel-caption d-none d-md-block text-body">
+              <h5>Stock Scanner built with Sequelize, Passport, Bootstrap CSS, and Handlebars. Using Yahoo API.</h5>
+            </div>
+          </a>
+          <a class="carousel-item" href="https://github.com/TaaniBravo/05-Workday-Scheduler" target="_blank">
+            <img src="./assets/images/2020.11.20-17.34_02.png" class="d-block w-100" alt="Workday Scheduler">
+            <div class="carousel-caption d-none d-md-block text-body">
+              <h5>Plan your workday with this scheduler that saves your inputs!</h5>
+            </div>
+          </a>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+  </main>

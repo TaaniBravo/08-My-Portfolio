@@ -1,5 +1,5 @@
 {
-  "name": "My-Portfolio",
+  "name": "Taani Maama - Portfolio",
   "version": "1.0.0",
   "description": "Hello! I'm Taani Maama and this is my portfolio.",
   "main": "server.js",
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/TaaniBravo/08-My-Portfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
