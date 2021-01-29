@@ -15,5 +15,5 @@ require('./routes/htmlRoutes')(app)
 
 app.listen(PORT, err => {
     if (err) console.error(err);
-    console.log(`App listening on PORT ${PORT}`)
+    console.log(`App listening on PORT http://localhost:${PORT}`)
 })
