@@ -116,6 +116,16 @@ footer i {
     margin-top: 100px;
 }
 
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
 
 @media screen and (max-width: 768px) {
     nav {
@@ -143,5 +153,11 @@ footer i {
 
     #about-me-container {
         margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    main {
+        padding-bottom: 40px;
     }
 }
