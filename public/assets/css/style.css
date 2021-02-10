@@ -91,6 +91,20 @@ footer i {
     margin-left: auto;
 }
 
+.tinted-image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+       rgba(0, 0, 0, 0.45), 
+       rgba(0, 0, 0, 0.45)
+    );
+  }
+
 .hide {
     display: none !important;
 }
