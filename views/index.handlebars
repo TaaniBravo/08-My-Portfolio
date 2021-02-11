@@ -1,11 +1,15 @@
 <main class="row vw-100 m-0">
   <nav class="nav flex-column col-lg-2 p-0">
+    {{!-- Website Nav --}}
     <button class="btn text-white" id="homeBtn" data-section="home">Home</button>
     <button class="btn text-white" id="aboutMeBtn" data-section='about-me'>About Me</button>
+    <button class="btn text-white" id="skillsetBtn" data-section='skillset'>Skillset</button>
     <button class="btn text-white" id="projectsBtn" data-section='projects'>Projects</button>
     <button class="btn" id="resumeBtn"><a class='text-white' href="./assets/Resume.docx" download>Resume</a></button>
+    {{!-- Mobile Nav --}}
     <button class="btn" id="homeIcon" data-section="home"><i class="fas fa-home text-white"></i></button>
     <button class="btn" id="aboutMeIcon" data-section='about-me'><i class="fas fa-address-card text-white"></i></button>
+    <button class="btn" id="skillsetIcon" data-section='skillset'><i class="fas fa-school text-white"></i></button>
     <button class="btn" id="projectsIcon" data-section='projects'><i
         class="fas fa-project-diagram text-white"></i></button>
     <button class="btn" id="resumeIcon"><a href="./assets/Resume.docx"><i
@@ -65,19 +69,6 @@
             <h5>Custom LMS to organize user made courses. Made with Sequelize, Passport, and Bootstrap.</h5>
           </div>
         </a>
-        {{!-- <a class="carousel-item tinted-image" href="https://github.com/TaaniBravo/StockSmart" target="_blank">
-          <img src="./assets/images/2020.11.20-17.34_01.png" class="d-block w-100" alt="Legend of Zelda Quiz">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Stock Scanner built with Sequelize, Passport, Bootstrap CSS, and Handlebars. Using Yahoo API.</h5>
-          </div>
-        </a> --}}
-        {{!-- <a class="carousel-item tinted-image" href="https://github.com/TaaniBravo/05-Workday-Scheduler"
-          target="_blank">
-          <img src="./assets/images/2020.11.20-17.34_02.png" class="d-block w-100" alt="Workday Scheduler">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Plan your workday with this scheduler that saves your inputs!</h5>
-          </div>
-        </a> --}}
       </div>
       <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
@@ -87,6 +78,47 @@
         <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
+  </section>
+
+  <section id="skillset" class="hide trans col-lg-10 d-flex flex-row flex-wrap px-0">
+    <div id="skillset-container" class="row">
+      <div class="card text-center text-light col-sm-4">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-3x fab fa-html5"></i></h5>
+          <h6 class="card-subtitle mb-2">HTML5</h6>
+        </div>
+      </div>
+      <div class="card text-center text-light col-sm-4">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-3x fab fa-css3"></i></h5>
+          <h6 class="card-subtitle mb-2">CSS3</h6>
+        </div>
+      </div>
+      <div class="card text-center text-light col-sm-4">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-3x fab fa-js"></i></h5>
+          <h6 class="card-subtitle mb-2">JavaScript</h6>
+        </div>
+      </div>
+      <div class="card text-center text-light col-sm-4">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-3x fab fa-node"></i></h5>
+          <h6 class="card-subtitle mb-2">NodeJs</h6>
+        </div>
+      </div>
+      <div class="card text-center text-light col-sm-4">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-3x fas fa-database"></i></h5>
+          <h6 class="card-subtitle mb-2">SQL and NoSQL</h6>
+        </div>
+      </div>
+      <div class="card text-center text-light col-sm-4">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa-3x fab fa-react"></i></h5>
+          <h6 class="card-subtitle mb-2">ReactJS</h6>
+        </div>
+      </div>
     </div>
   </section>
 </main>

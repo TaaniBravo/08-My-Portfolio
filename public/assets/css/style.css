@@ -67,6 +67,7 @@ footer i {
 #homeIcon,
 #aboutMeIcon,
 #projectsIcon,
+#skillsetIcon,
 #resumeIcon  {
         display: none;
     }
@@ -89,6 +90,11 @@ footer i {
 
 #copyright {
     margin-left: auto;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .tinted-image:before {
@@ -135,6 +141,7 @@ footer i {
     #homeBtn,
     #aboutMeBtn,
     #projectsBtn,
+    #skillsetBtn,
     #resumeBtn  {
         display: none;
     }
@@ -142,6 +149,7 @@ footer i {
     #homeIcon,
     #aboutMeIcon,
     #projectsIcon,
+    #skillsetIcon,
     #resumeIcon  {
         display: inherit;
         padding: 0 0 0.9rem 0;
