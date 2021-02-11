@@ -1,6 +1,7 @@
 const $homeEl = $('#home')
 const $aboutMeEl = $('#about-me')
 const $projectsEl = $('#projects')
+const $skillsetEl = $('#skillset')
 
 $('nav').on('click', '.btn', handleSections)
 
@@ -39,9 +40,11 @@ function handleSections(event) {
     if ($(this).data('section') == 'home') {
         $aboutMeEl.addClass('trans')
         $projectsEl.addClass('trans')
+        $skillsetEl.addClass('trans')
         setTimeout(() => {
             $aboutMeEl.addClass('hide')
             $projectsEl.addClass('hide')
+            $skillsetEl.addClass('hide')
             $homeEl.removeClass('hide')
         }, 1000)
         setTimeout(() => $homeEl.removeClass('trans'), 1050)
@@ -50,9 +53,11 @@ function handleSections(event) {
     if ($(this).data('section') == 'about-me') {
         $homeEl.addClass('trans')
         $projectsEl.addClass('trans')
+        $skillsetEl.addClass('trans')
         setTimeout(() => {
             $homeEl.addClass('hide')
             $projectsEl.addClass('hide')
+            $skillsetEl.addClass('hide')
             $aboutMeEl.removeClass('hide')
         }, 1000)
         setTimeout(() => $aboutMeEl.removeClass('trans'), 1050)
@@ -61,12 +66,27 @@ function handleSections(event) {
     if ($(this).data('section') == 'projects') {
         $homeEl.addClass('trans')
         $aboutMeEl.addClass('trans')
+        $skillsetEl.addClass('trans')
         setTimeout(() => {
             $homeEl.addClass('hide')
             $aboutMeEl.addClass('hide')
+            $skillsetEl.addClass('hide')
             $projectsEl.removeClass('hide')
         }, 1000)
         setTimeout(() => $projectsEl.removeClass('trans'), 1050)
+    }
+
+    if ($(this).data('section') == 'skillset') {
+        $homeEl.addClass('trans')
+        $aboutMeEl.addClass('trans')
+        $projectsEl.addClass('trans')
+        setTimeout(() => {
+            $homeEl.addClass('hide')
+            $aboutMeEl.addClass('hide')
+            $projectsEl.addClass('hide')
+            $skillsetEl.removeClass('hide')
+        }, 1000)
+        setTimeout(() => $skillsetEl.removeClass('trans'), 1050)
     }
 
 };
